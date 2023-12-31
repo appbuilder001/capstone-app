@@ -17,6 +17,26 @@
   padding: 0;
 }
 
+img {
+  border-radius: 16px;
+}
+
+h1 {
+  font-size: 64pt;
+}
+
+h2 {
+  font-size: 40pt;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16pt;
+}
+
 a {
   text-decoration: none;
   color: black;
