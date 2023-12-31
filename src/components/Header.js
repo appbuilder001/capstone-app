@@ -2,7 +2,7 @@ function Header ({children}) {
 
     return (
         <>
-        {children}
+            {children}
         </>
     )
 }

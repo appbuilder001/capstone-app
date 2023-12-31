@@ -56,6 +56,14 @@ li {
   flex-direction: column;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap {
+  gap: 15px;
+}
+
 .just-c {
   justify-content: center;
 }
@@ -64,10 +72,33 @@ li {
   justify-content: space-between;
 }
 
+.just-se {
+  justify-content: space-evenly;
+}
+
 .ai-c {
   align-items: center;
 }
 
+.ai-fe {
+  align-items: flex-end;
+}
+
 .m-a {
   margin: auto;
+}
+
+.radius {
+  border-radius: 16px;
+}
+.cta_btn {
+  font-family: var(--typeface2);
+  color: black;
+  border-radius: 16px;
+  width: 60%;
+  height: 40px;
+  background-color: var(--primary_color2);
+  border: none;
+  font-size: 16pt;
+  font-weight: 600;
 }
