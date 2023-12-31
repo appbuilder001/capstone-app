@@ -1,7 +1,7 @@
 function Main() {
 
     return (
-        <>Main</>
+        <div  style={{backgroundColor: 'yellow'}} >Main</div>
     )
 }
 

@@ -3,9 +3,9 @@ import logo from '../assets/logos/Logo.svg'
 function Nav() {
 
     return (
-        <nav>
-            <img src={logo} alt="company logo" />
-            <ul>
+        <nav className="flex-row just-c ai-c m-a" style={{width: '60%', minHeight: '120px'}} >
+            <ul className="flex-row just-sb ai-c" style={{width: '100%', fontFamily: 'var(--typeface2)'}}>
+                <img src={logo} alt="company logo" />
                 <a href="/"><li>HOME</li></a>
                 <a href="/"><li>ABOUT</li></a>
                 <a href="/"><li>MENU</li></a>

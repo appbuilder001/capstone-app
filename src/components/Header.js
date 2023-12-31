@@ -1,7 +1,9 @@
-function Header() {
+function Header ({children}) {
 
     return (
-        <>Header</>
+        <>
+        {children}
+        </>
     )
 }
 

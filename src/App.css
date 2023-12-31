@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text:wght@400;500&display=swap');
+
+:root {
+  --primary_color1: #495E57;
+  --primary_color2: #F4CD14;
+  --secondary_color1: #EE9972;
+  --secondary_color2: #FDBABB;
+  --highlight_color1: #EDEFEE;
+  --highlight_color2: #333333;
+  --typeface1: 'Markazi Text', serif;
+  --typeface2: 'Karla', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  list-style: none;
+  
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.just-c {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.just-sb {
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ai-c {
+  align-items: center;
+}
+
+.m-a {
+  margin: auto;
 }
