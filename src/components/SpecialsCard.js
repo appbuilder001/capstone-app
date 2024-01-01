@@ -3,9 +3,9 @@ import scooter from '../assets/icons/scooter.png'
 function SpecialsCard(props) {
 
     return (
-        <div style={{backgroundColor: 'var(--highlight_color1)', height: '440px', width: '265px'}}>
+        <div style={{backgroundColor: 'var(--highlight_color1)', height: '440px', width: '265px', borderRadius: '16px 16px 0 0'}}>
             <div className='flex-col'>
-                <div style={{backgroundImage: `url('${props.image}')`, height: '185px', backgroundSize: 'cover'}}>
+                <div style={{backgroundImage: `url('${props.image}')`, height: '185px', backgroundSize: 'cover', borderRadius: '16px 16px 0 0'}}>
                 </div>
                 <div style={{padding: '15px'}}>
                     <div className='flex-row just-sb ai-c'>

@@ -42,7 +42,7 @@ function Specials() {
             <h2 style={{lineHeight: '.7', fontFamily: 'var(--typeface1'}}>This weeks specials!</h2>
             <button className='cta_btn' style={{width: '200px', height: '60px'}}>Onine Menu</button>
         </section>
-        <section className='flex-row just-sb ai-c m-a wrap gap' style={{width: '70%', marginTop: '70px'}}>
+        <section className='flex-row just-sb ai-c m-a wrap gap' style={{width: '70%', paddingBottom: '75px', marginTop: '70px'}}>
             {specialElement.map(special => {return <>{special}</>})}
         </section>
     </div>) 

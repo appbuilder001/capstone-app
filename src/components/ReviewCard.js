@@ -1,21 +1,27 @@
 function ReviewCard(props) {
 
+    const stars = []
+
+    for (let i = 0; i < props.rating; i++)
+        stars.push(<p style={{color: 'gold'}}>&#9733;</p>)
+    for (let i = 0; i < (5 - props.rating); i++)
+        stars.push(<p style={{color: 'grey'}}>&#9733;</p>)
+
     return (
-        <div style={{backgroundColor: 'var(--highlight_color1)', height: '440px', width: '265px'}}>
-            <div className='flex-col'>
-                <div style={{backgroundImage: `url('${props.image}')`, height: '185px', backgroundSize: 'cover'}}>
+        <div style={{backgroundColor: 'var(--highlight_color1)', height: '170px', width: '200px'}}>
+            <div className='flex-col gap' style={{padding: '20px'}}>
+                <div class='flex-row'>
+                   {stars}
                 </div>
-                <div style={{padding: '15px'}}>
-                    <div className='flex-row just-sb ai-c'>
-                        <h3 style={{fontFamily: 'var(--typeface1)'}}>{props.name}</h3>
-                        <p style={{fontSize: '16px',  color: 'var(--secondary_color1)', fontFamily: 'var(--typeface2)'}}>{props.price}</p>
-                    </div>
-                    <p style={{minHeight: '150px',lineHeight: '1.2', marginTop: '20px', fontSize: '16px', fontFamily: 'var(--typeface2)'}}>{props.description}</p>
-                    <div className='flex-row gap ai-c'>
-                        <p className='fw-bold' style={{fontSize: '16px', fontFamily: 'var(--typeface2)'}}>Order a delivery</p>
-                        <img src={scooter}/>
-                    </div>
+                <div class='flex-row ai-c gap'>
+                    <img src={props.image} style={{width: '40px'}}></img>
+                    <p style={{fontSize: '16px'}}>{props.name}</p>
+                </div>
+                <div class='flex-row'>
+                    <p style={{fontSize: '16px'}}>{props.description}</p>
                 </div>
             </div>
         </div>
-)} export default SpecialsCard
+)} 
+
+export default ReviewCard

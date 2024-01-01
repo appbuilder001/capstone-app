@@ -47,6 +47,10 @@ li {
   
 }
 
+.text-a {
+  text-align: center;
+}
+
 .flex-row {
   display: flex;
 }
