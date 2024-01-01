@@ -51,6 +51,10 @@ li {
   text-align: center;
 }
 
+.texta-j {
+  text-align: justify;
+}
+
 .flex-row {
   display: flex;
 }
@@ -78,6 +82,10 @@ li {
 
 .just-se {
   justify-content: space-evenly;
+}
+
+.just-sa {
+  justify-content: space-around;
 }
 
 .ai-c {
