@@ -4,7 +4,7 @@ import image2 from '../assets/images/chicago2.jpg'
 function Chicago() {
 
     return(
-        <div className='flex-row just-se wrap gap' style={{paddingTop: '40px', backgroundColor: 'var(--primary_color1)', height: '500px'}}>
+        <div className='flex-row just-se wrap gap' style={{height: 'auto', padding: '40px 20px 125px 20px', backgroundColor: 'var(--primary_color1)'}}>
             <section className='flex-col' style={{paddingTop: '20px', gap: '20px'}}>
                 <section>
                     <h1 style={{fontFamily: 'var(--typeface1)', lineHeight: '0.7', fontWeight: '300', color: 'var(--primary_color2)'}}>Little Lemon</h1>

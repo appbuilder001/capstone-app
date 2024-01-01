@@ -46,7 +46,7 @@ function CustomersSay() {
         <section className='flex-row just-c m-a'style={{width: '70%'}}>
             <h3 className='texta-c' style={{fontFamily: 'var(--typeface1'}}>Testimonials!</h3>
         </section>
-        <section className='flex-row just-sb ai-c m-a wrap gap' style={{marginTop: '50px', width: '70%'}}>
+        <section className='flex-row just-se ai-c m-a wrap gap' style={{marginTop: '50px', width: '70%'}}>
             {reviewElement.map(review => {return <>{review}</>})}
         </section>
     </div>) 
