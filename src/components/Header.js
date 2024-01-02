@@ -1,8 +1,10 @@
-function Header ({children}) {
+import Nav from './Nav.js'
+
+function Header () {
 
     return (
         <>
-            {children}
+            <Nav />
         </>
     )
 }
