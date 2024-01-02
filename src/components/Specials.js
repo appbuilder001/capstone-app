@@ -31,10 +31,7 @@ function Specials() {
         return (
             <SpecialsCard image={image} name={name} price={price} description={description} />
         )
-    })
-
-    console.log(specialElement)
- 
+    }) 
 
     return(
     <div style={{marginTop: '-75px', background: 'white'}}>
@@ -43,7 +40,7 @@ function Specials() {
             <button className='cta_btn' style={{width: '200px', height: '60px'}}>Onine Menu</button>
         </section>
         <section className='flex-row just-se ai-c m-a wrap gap' style={{width: '70%', paddingBottom: '75px', marginTop: '70px'}}>
-            {specialElement.map(special => {return <>{special}</>})}
+            {specialElement.map((special, index) => {return <li key={index}>{special}</li>})}
         </section>
     </div>) 
 }

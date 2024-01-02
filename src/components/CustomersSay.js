@@ -32,14 +32,11 @@ function CustomersSay() {
         },
     ]
 
-    const reviewElement =  reviews.map(({name, rating, description, image}) => {
+    const reviewElement =  reviews.map((index, {name, rating, description, image}) => {
         return (
-            <ReviewCard name={name} rating={rating} description={description} image={image} />
+            <ReviewCard name={name} rating={rating} description={description} image={image} key={index}/>
         )
-    })
-
-    console.log(reviewElement)
- 
+    }) 
 
     return(
     <div style={{background: 'var(--primary_color2)', padding: '75px 0'}}>
@@ -47,7 +44,7 @@ function CustomersSay() {
             <h3 className='texta-c' style={{fontFamily: 'var(--typeface1'}}>Testimonials!</h3>
         </section>
         <section className='flex-row just-se ai-c m-a wrap gap' style={{marginTop: '50px', width: '70%'}}>
-            {reviewElement.map(review => {return <>{review}</>})}
+            {reviewElement.map((review, index) => {return <li key={index}>{review}</li>})}
         </section>
     </div>) 
 }

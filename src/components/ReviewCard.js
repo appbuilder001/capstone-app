@@ -10,14 +10,14 @@ function ReviewCard(props) {
     return (
         <div className='radius' style={{backgroundColor: 'var(--highlight_color1)', height: '180px', width: '200px'}}>
             <div className='flex-col gap' style={{padding: '20px'}}>
-                <div class='flex-row'>
+                <div className='flex-row'>
                    {stars}
                 </div>
-                <div class='flex-row ai-c gap'>
+                <div className='flex-row ai-c gap'>
                     <img src={props.image} style={{width: '40px'}}></img>
                     <p style={{fontSize: '16px'}}>{props.name}</p>
                 </div>
-                <div class='flex-row'>
+                <div className='flex-row'>
                     <p style={{fontSize: '14px'}}>{props.description}</p>
                 </div>
             </div>

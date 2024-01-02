@@ -1,36 +1,47 @@
-import { useReducer } from "react"
+import { useState, useEffect, useReducer } from "react"
 import { Routes, Route } from 'react-router-dom'
 import Specials from "./Specials"
 import Chicago from "./Chicago"
 import Homepage from './Homepage.js'
 import BookingPage from './BookingPage'
+import { fetchAPI, submitAPI } from '../utils/appAPI'
+import ConfirmedBooking from "./ConfirmedBooking.js"
 
 function updateTimes(state, action) {
     if(!action.type)
-       return console.log(['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'])
+       return state
     else 
-        return console.log(['7:00', '8:00', '9:00', '10:00', '11:00', '12:00'])
+        return state
 }
 
 function Main () {
 
+    const date = new Date()
+
+    useEffect(() => {
+        initializeTimes()
+    })
+
     const initializeTimes = () => {
-        return ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']
+        setTimes(fetchAPI(date))
     }
 
-    const handleUpdate = (date) => {
+    function handleUpdate(date) {
         dispatch({type: date})
     }
-
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes)
+
+    const [times, setTimes] = useState()
 
     return (
         <div style={{width: '100%'}}>
-         <Routes>
-            <Route path='/' element={<Homepage />} />
-            <Route path='/about' element={<Chicago />} />
-            <Route path='/menu' element={<Specials />} />
-            <Route path='/reservations' element={<BookingPage availableTimes={availableTimes} handleUpdate={handleUpdate}/>} />
+        <Routes>
+                <Route path='/' element={<Homepage />} />
+                <Route path='/about' element={<Chicago />} />
+                <Route path='/menu' element={<Specials />} />
+                <Route path='/reservations' element={<BookingPage availableTimes={times} handleUpdate={handleUpdate}/>} />
+                <Route path='/confirmed' element={<ConfirmedBooking />} />
+  
         </Routes>
         </div>
     )

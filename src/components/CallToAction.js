@@ -10,10 +10,10 @@ function CallToAction() {
                     <h2 style={{fontFamily: 'var(--typeface1)', lineHeight: '0.7', fontWeight: '300', color: 'white'}}>Chicago</h2>
                 </section>
                 <p style={{fontFamily: 'var(--typeface2)', color: 'white', maxWidth: '290px'}}>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                <button class="cta_btn"/*onClick={navigateTo(reservations)}*/>Reserve a Table</button>
+                <button className="cta_btn"/*onClick={navigateTo(reservations)}*/>Reserve a Table</button>
             </section>
             <section>
-                <div class='radius' style={{backgroundImage: `url('${image}')`, width: '394px', height: '406px', backgroundSize: 'cover'}} alt='chef holding food'/>
+                <div className='radius' style={{backgroundImage: `url('${image}')`, width: '394px', height: '406px', backgroundSize: 'cover'}} alt='chef holding food'/>
             </section>
         </div>
     )

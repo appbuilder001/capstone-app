@@ -7,7 +7,7 @@ function Footer() {
             <img src={logo} alt="company logo" />
             <div className='flex-col'>
                 <ul>
-                    <lh className='fw-bold'>Navigation</lh>
+                    <li className='fw-bold'>Navigation</li>
                     <li>Home</li>
                     <li>About</li>
                     <li>Menu</li>
@@ -18,7 +18,7 @@ function Footer() {
             </div>
             <div className='flex-col'>
                 <ul>
-                    <lh className='fw-bold'>Contact</lh>
+                    <li className='fw-bold'>Contact</li>
                     <li><address>123 Main St.,<br />Los Angeles, CA</address></li>
                     <li>555-555-5555</li>
                     <li>contact@littlelemon.com</li>
@@ -27,7 +27,7 @@ function Footer() {
             </div>
             <div className='flex-col'>
                 <ul>
-                    <lh className='fw-bold'>Social Media</lh>
+                    <li className='fw-bold'>Social Media</li>
                     <li>Facebook</li>
                     <li>Instagram</li>
                     <li>Twitter</li>
