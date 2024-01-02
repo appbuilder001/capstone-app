@@ -47,6 +47,9 @@ li {
   
 }
 
+div select, input {
+  font-weight: bold;
+}
 .text-a {
   text-align: center;
 }
@@ -117,4 +120,14 @@ li {
   border: none;
   font-size: 16pt;
   font-weight: 600;
+}
+
+.formInput {
+  background-color: var(--highlight_color1);
+  border: none;
+  width: 30vw;
+  height: 50px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: var(--typeface2);
 }
